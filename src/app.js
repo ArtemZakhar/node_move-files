@@ -3,7 +3,7 @@ const path = require('path');
 
 const [fromDir, toDir] = process.argv.slice(2);
 
-function copyFiles(from, to) {
+function moveFiles(from, to) {
   if (!from || !to) {
     // eslint-disable-next-line no-console
     console.error('without params');
@@ -30,4 +30,4 @@ function copyFiles(from, to) {
   }
 }
 
-copyFiles(fromDir, toDir);
+moveFiles(fromDir, toDir);
